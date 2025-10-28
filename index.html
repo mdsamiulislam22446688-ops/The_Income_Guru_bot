@@ -8,23 +8,27 @@
 </head>
 <body>
   <div class="container">
-    <h1>💰 The Income Guru 💰</h1>
-    <p>আপনার আয় ড্যাশবোর্ডে স্বাগতম!</p>
+    <h1>Welcome to The Income Guru</h1>
 
-    <div class="card">
-      <h2>আপনার ব্যালান্স</h2>
-      <p id="balance">৳ 0</p>
-      <button onclick="claimBonus()">দৈনিক বোনাস দাবি করুন</button>
+    <button onclick="onStart()">Start</button>
+
+    <div class="channel-join">
+      <p>📢 Mini App ব্যবহার করার আগে আমাদের চ্যানেল Join করুন:</p>
+      <a href="https://t.me/TheIncomeGuru" target="_blank">Join Channel</a>
     </div>
 
-    <div class="card">
-      <h2>রেফারেল সিস্টেম</h2>
-      <p>আপনার বন্ধুদের আমন্ত্রণ জানান এবং প্রতি জনের জন্য ১০৳ অর্জন করুন!</p>
+    <div class="balance-section">
+      <h2>Balance: <span id="balance">৳ 0</span></h2>
+    </div>
+
+    <button onclick="claimBonus()">Claim Daily Bonus</button>
+    <button onclick="withdraw()">Withdraw</button>
+
+    <div class="referral-section">
+      <h3>Referral Link</h3>
       <input type="text" id="refLink" readonly>
-      <button onclick="copyLink()">লিঙ্ক কপি করুন</button>
+      <button onclick="copyLink()">Copy Referral Link</button>
     </div>
-
-    <p class="footer">Powered by @theIncomeGuru_bot</p>
   </div>
 
   <script src="script.js"></script>
