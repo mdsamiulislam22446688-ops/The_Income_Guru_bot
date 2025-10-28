@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Income Guru</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💰 The Income Guru 💰</h1>
+    <p>আপনার আয় ড্যাশবোর্ডে স্বাগতম!</p>
+
+    <div class="card">
+      <h2>আপনার ব্যালান্স</h2>
+      <p id="balance">৳ 0</p>
+      <button onclick="claimBonus()">দৈনিক বোনাস দাবি করুন</button>
+    </div>
+
+    <div class="card">
+      <h2>রেফারেল সিস্টেম</h2>
+      <p>আপনার বন্ধুদের আমন্ত্রণ জানান এবং প্রতি জনের জন্য ১০৳ অর্জন করুন!</p>
+      <input type="text" id="refLink" readonly>
+      <button onclick="copyLink()">লিঙ্ক কপি করুন</button>
+    </div>
+
+    <p class="footer">Powered by @theIncomeGuru_bot</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
