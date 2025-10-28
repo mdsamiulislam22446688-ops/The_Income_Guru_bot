@@ -1,7 +1,6 @@
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #00b09b, #96c93d);
-  color: white;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
   text-align: center;
   padding: 20px;
 }
@@ -9,35 +8,45 @@ body {
 .container {
   max-width: 400px;
   margin: auto;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
+  background: #fff;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(255,255,255,0.2);
-}
-
-.card {
-  background: rgba(255,255,255,0.1);
   border-radius: 10px;
-  padding: 15px;
-  margin-top: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 button {
-  background-color: #fff;
-  color: #333;
-  border: none;
   padding: 10px 20px;
-  border-radius: 8px;
+  margin: 10px 0;
+  border: none;
+  background-color: #0077cc;
+  color: #fff;
+  border-radius: 5px;
   cursor: pointer;
-  font-weight: bold;
 }
 
 button:hover {
-  background-color: #f2f2f2;
+  background-color: #005fa3;
 }
 
-.footer {
-  margin-top: 20px;
-  font-size: 14px;
-  opacity: 0.8;
+input[type="text"] {
+  width: 80%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.channel-join {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #e0f7fa;
+  border-radius: 8px;
+}
+
+.channel-join a {
+  color: #0077cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.channel-join a:hover {
+  text-decoration: underline;
 }
