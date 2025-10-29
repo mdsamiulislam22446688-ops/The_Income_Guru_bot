@@ -2,25 +2,32 @@
 <html lang="bn">
 <head>
   <meta charset="UTF-8">
-  <title>🏠 Income Guru</title>
+  <title>INCOME GURU</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
-  <div class="container">
-    <img id="userPhoto" src="default-avatar.png" alt="User Photo" class="avatar">
-    <h2>👋 স্বাগতম, <span id="username">ইউজার</span></h2>
-    <p>💰 ব্যালেন্স: <span id="balance">৳০</span></p>
-
-    <p>🔗 আপনার রেফারেল লিংক:</p>
-    <input type="text" id="refLink" readonly>
-    <button onclick="copyReferral()">📋 কপি করুন</button>
+  <div class="profile-card">
+    <h2 id="username">Md Samiul ✔️</h2>
+    <p class="balance">💰 ব্যালেন্স: <span id="balance">৪৪০ টাকা</span></p>
   </div>
 
-  <nav>
+  <div class="card-grid">
+    <div class="card green">আজকের আয়: +২০ টাকা</div>
+    <div class="card blue">রেফারেল সংখ্যা: ০ জন</div>
+    <div class="card red">মোট আয়: ৪৪০.০০ টাকা</div>
+    <div class="card blue">রেফারেল আয়: +০ টাকা</div>
+  </div>
+
+  <div class="referral-banner">
+    <p>প্রতি সফল রেফারেলে ৫০ টাকা বোনাস</p>
+    <input type="text" value="https://t.me/The_Income_Guru_Bot?start=8420232029" readonly>
+  </div>
+
+  <nav class="bottom-nav">
+    <a href="index.html">🏠 হোম</a>
     <a href="earn.html">🪙 ইনকাম</a>
     <a href="withdraw.html">💳 উত্তোলন</a>
-    <a href="history.html">📋 হিস্টোরি</a>
     <a href="support.html">🛠️ সাপোর্ট</a>
   </nav>
 

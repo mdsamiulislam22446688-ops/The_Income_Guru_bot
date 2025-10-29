@@ -2,50 +2,30 @@
 <html lang="bn">
 <head>
   <meta charset="UTF-8">
-  <title>💳 টাকা উত্তোলন</title>
+  <title>উত্তোলন</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
-  <div class="container">
-    <h2>💳 টাকা উত্তোলন</h2>
+  <h2 class="page-title">💳 টাকা উত্তোলন করুন</h2>
 
-    <label for="method">মাধ্যম:</label>
-    <select id="method">
-      <option value="bkash">Bkash</option>
-      <option value="nagad">Nagad</option>
-    </select>
+  <form class="withdraw-form">
+    <label>আপনার নাম:</label>
+    <input type="text" placeholder="Md Samiul">
 
-    <label for="number">আপনার নাম্বার:</label>
-    <input type="text" id="number" placeholder="01XXXXXXXXX">
+    <label>মোবাইল নাম্বার (Bkash/Nagad):</label>
+    <input type="text" placeholder="01XXXXXXXXX">
 
-    <label for="amount">পরিমাণ (৳):</label>
-    <input type="number" id="amount" placeholder="800">
+    <label>উত্তোলনের পরিমাণ:</label>
+    <input type="number" placeholder="যেমন: ২০০">
 
-    <button onclick="submitWithdraw()">✅ রিকোয়েস্ট করুন</button>
-    <p id="withdrawStatus"></p>
-  </div>
+    <button type="submit">✅ রিকোয়েস্ট পাঠান</button>
+  </form>
 
-  <nav>
+  <nav class="bottom-nav">
     <a href="index.html">🏠 হোম</a>
     <a href="earn.html">🪙 ইনকাম</a>
-    <a href="history.html">📋 হিস্টোরি</a>
+    <a href="withdraw.html">💳 উত্তোলন</a>
     <a href="support.html">🛠️ সাপোর্ট</a>
   </nav>
-
-  <script>
-    function submitWithdraw() {
-      const method = document.getElementById("method").value;
-      const number = document.getElementById("number").value;
-      const amount = parseInt(document.getElementById("amount").value);
-
-      if (!number || number.length !== 11 || isNaN(amount) || amount < 800) {
-        document.getElementById("withdrawStatus").innerText = "⚠️ সঠিক নাম্বার দিন এবং ৳৮০০ বা তার বেশি দিন!";
-        return;
-      }
-
-      document.getElementById("withdrawStatus").innerText = "✅ রিকোয়েস্ট গ্রহণ হয়েছে! ২৪ ঘণ্টার মধ্যে প্রসেস হবে।\nচ্যানেলে জয়েন করুন: https://t.me/The_Income_Guru";
-    }
-  </script>
 </body>
 </html>
