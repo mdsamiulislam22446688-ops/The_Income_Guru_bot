@@ -2,34 +2,27 @@
 <html lang="bn">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Income Guru</title>
+  <title>🏠 Income Guru</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to The Income Guru</h1>
+    <img id="userPhoto" src="default-avatar.png" alt="User Photo" class="avatar">
+    <h2>👋 স্বাগতম, <span id="username">ইউজার</span></h2>
+    <p>💰 ব্যালেন্স: <span id="balance">৳০</span></p>
 
-    <button onclick="onStart()">Start</button>
-
-    <div class="channel-join">
-      <p>📢 Mini App ব্যবহার করার আগে আমাদের চ্যানেল Join করুন:</p>
-      <a href="https://t.me/TheIncomeGuru" target="_blank">Join Channel</a>
-    </div>
-
-    <div class="balance-section">
-      <h2>Balance: <span id="balance">৳ 0</span></h2>
-    </div>
-
-    <button onclick="claimBonus()">Claim Daily Bonus</button>
-    <button onclick="withdraw()">Withdraw</button>
-
-    <div class="referral-section">
-      <h3>Referral Link</h3>
-      <input type="text" id="refLink" readonly>
-      <button onclick="copyLink()">Copy Referral Link</button>
-    </div>
+    <p>🔗 আপনার রেফারেল লিংক:</p>
+    <input type="text" id="refLink" readonly>
+    <button onclick="copyReferral()">📋 কপি করুন</button>
   </div>
+
+  <nav>
+    <a href="earn.html">🪙 ইনকাম</a>
+    <a href="withdraw.html">💳 উত্তোলন</a>
+    <a href="history.html">📋 হিস্টোরি</a>
+    <a href="support.html">🛠️ সাপোর্ট</a>
+  </nav>
 
   <script src="script.js"></script>
 </body>

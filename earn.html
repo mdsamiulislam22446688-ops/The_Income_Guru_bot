@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>🪙 ইনকাম করুন</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>🪙 ইনকাম করুন</h2>
+
+    <button onclick="watchAd()">🎥 বিজ্ঞাপন দেখুন (৳২০)</button>
+    <p id="adStatus"></p>
+
+    <button onclick="spinBonus()">🎰 Daily Spin</button>
+    <p id="spinResult"></p>
+
+    <button onclick="loginBonus()">📅 Login Bonus</button>
+    <p id="loginStatus"></p>
+  </div>
+
+  <nav>
+    <a href="index.html">🏠 হোম</a>
+    <a href="withdraw.html">💳 উত্তোলন</a>
+    <a href="history.html">📋 হিস্টোরি</a>
+    <a href="support.html">🛠️ সাপোর্ট</a>
+  </nav>
+
+  <script>
+    function watchAd() {
+      document.getElementById("adStatus").innerText = "🎥 বিজ্ঞাপন লোড হচ্ছে...";
+      setTimeout(() => {
+        window.open("https://otieu.com/4/10111853", "_blank");
+        document.getElementById("adStatus").innerText = "✅ বিজ্ঞাপন দেখার পর ৳২০ ইনকাম হবে!";
+      }, 1000);
+    }
+
+    function spinBonus() {
+      const amount = Math.floor(Math.random() * 10) + 1;
+      document.getElementById("spinResult").innerText = `🎰 আপনি পেয়েছেন ৳${amount}`;
+    }
+
+    function loginBonus() {
+      document.getElementById("loginStatus").innerText = "✅ আজকের Login Bonus: ৳৫";
+    }
+  </script>
+</body>
+</html>

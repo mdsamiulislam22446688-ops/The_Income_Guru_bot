@@ -1,26 +1,47 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f8ff;
+  font-family: 'Noto Sans Bengali', sans-serif;
+  background: #f9f9f9;
   text-align: center;
   padding: 20px;
+  margin: 0;
 }
 
 .container {
-  max-width: 400px;
-  margin: auto;
-  background: #fff;
+  background: #ffffff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+  border: 2px solid #0077cc;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 button {
-  padding: 10px 20px;
-  margin: 10px 0;
-  border: none;
   background-color: #0077cc;
-  color: #fff;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
   border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -28,25 +49,35 @@ button:hover {
   background-color: #005fa3;
 }
 
-input[type="text"] {
-  width: 80%;
-  padding: 8px;
-  margin: 10px 0;
+nav {
+  margin-top: 20px;
 }
 
-.channel-join {
-  margin: 20px 0;
-  padding: 10px;
-  background-color: #e0f7fa;
-  border-radius: 8px;
-}
-
-.channel-join a {
-  color: #0077cc;
-  font-weight: bold;
+nav a {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 15px;
+  background: #0077cc;
+  color: #fff;
+  border-radius: 5px;
   text-decoration: none;
+  font-size: 14px;
 }
 
-.channel-join a:hover {
-  text-decoration: underline;
+nav a:hover {
+  background: #005fa3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  margin-top: 10px;
+}
+
+ul li {
+  background: #f1f1f1;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
 }
